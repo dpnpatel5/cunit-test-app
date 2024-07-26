@@ -27,7 +27,7 @@ $(OUTPUT_BIN): $(APP_SRCS)
 
 # Application binary with CUnit
 $(OUTPUT_BIN)_test: $(APP_SRCS) $(TEST_SRCS)
-	$(CC) $(CFLAGS) -DCUNIT_ENABLE -o $(OUTPUT_BIN) $(APP_SRCS) $(TEST_SRCS) $(LDFLAGS)
+	$(CC) $(CFLAGS) -DCUNIT_ENABLE -o $(OUTPUT_BIN)_test $(APP_SRCS) $(TEST_SRCS) $(LDFLAGS)
 
 # Clean up generated files
 clean:
