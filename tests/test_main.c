@@ -6,6 +6,10 @@
 #include <stdio.h>
 
 void test_add(void);
+void test_fprintf(void);
+void test_fread(void);
+void test_setBookDetails(void);
+void test_getBookDetails(void);
 
 /* run at the start of the suite */
 int setup_env(void)
@@ -23,6 +27,10 @@ int cleanup_env(void)
 
 CU_TestInfo test_array[] = {
 	{ "test_add", test_add },
+	{ "test_fprintf", test_fprintf },
+	{ "test_fread", test_fread },
+	{ "test_setBookDetails", test_setBookDetails },
+	{ "test_getBookDetails", test_getBookDetails },
 	CU_TEST_INFO_NULL,
 };
 

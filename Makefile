@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -I./tests -I/usr/local/include
+CFLAGS = -Wall -I./tests -I./app -I/usr/local/include
 LDFLAGS = -lcunit -L./
 
 # Directories
@@ -9,7 +9,7 @@ TEST_DIR = ./tests
 
 # Source files
 APP_SRCS = $(APP_DIR)/app.c 
-TEST_SRCS = $(TEST_DIR)/test_add.c $(TEST_DIR)/test_main.c
+TEST_SRCS = $(TEST_DIR)/test_main.c $(TEST_DIR)/test_add.c $(TEST_DIR)/test_book.c
 
 # Output binary
 OUTPUT_BIN = application
